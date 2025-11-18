@@ -1,0 +1,81 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+
+# Virtual Environments
+d4fl_env/
+venv/
+env/
+ENV/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Large data files (keep structure, exclude large binaries)
+*.npy
+*.h5
+*.ser
+*.jar
+*.class
+
+# Defects4J (large framework, exclude)
+defects4j/
+jacoco/
+
+# Temporary files
+*.log
+wget-log
+visualization_output.txt
+
+# Coverage data (can be regenerated)
+coverage.xml
+summary.csv
+all_tests
+failing_tests
+*.csv
+*.json
+
+# Model files (large)
+*.h5
+*.pkl
+*.model
+
+# Test outputs
+predictions.npy
+test_labels.npy
+
+# Keep structure but exclude large files
+multi_bug_data/*/coverage.xml
+multi_bug_data/*/all_tests
+multi_bug_data/*/failing_tests
+multi_bug_data/*/summary.csv
+
+# Keep combined folder structure but exclude large .npy files
+combined/*.npy
+combined/visuals/*.png
+combined/tables/*.csv
+
+# But keep important reports and scripts
+!combined/*.py
+!combined/*.md
+!combined/README.md
+!combined/STATUS.md
+!combined/COMBINED_REPORT.md
+
